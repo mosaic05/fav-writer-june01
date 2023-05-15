@@ -51,24 +51,24 @@ def text_to_speech(text, aws_access_key_id, aws_secret_access_key):
 
     # Combine the audio chunks
     combined = b"".join(audio_chunks)
-    with open("E:\JUNE\Winter_books\Alain De Button\Proust_audio_book.mp3", "wb") as f:
+    with open("Proust_audio_book.mp3", "wb") as f:
         f.write(combined)
 
 text_to_speech(text, aws_access_key_id, aws_secret_access_key)
 
 # Load the background music file
-music = AudioSegment.from_file(r"C:\Users\khoso\Youtube-Shorts-Bot\songs\june\audio1.mp3")
+music = AudioSegment.from_file(r"path/to/audio/file/to/add/background/music/audio1.mp3")
 
 # Set the volume of the background music to moderate
 music = music.apply_gain(-10.0)
 
 # Load the audio book file
-audio_book = AudioSegment.from_file("E:\JUNE\Winter_books\Alain De Button\Proust_audio_book.mp3")
+audio_book = AudioSegment.from_file("Proust_audio_book.mp3")
 
 # Combine the two audio files and set the volume of the background music to moderate
 combined = audio_book.overlay(music)
 
 # Save the combined audio file
-combined.export(r"E:\JUNE\Winter_books\Alain De Button\audio_book_with_music.mp3", format="mp3")
+combined.export(r"audio_book_with_music.mp3", format="mp3")
 # Play the combined audio file
 
