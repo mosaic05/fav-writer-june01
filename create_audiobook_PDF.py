@@ -2,14 +2,14 @@
 """
 Created on Sun Feb 12 18:47:16 2023
 
-@author: khoso
+@author: Rizwan Hassan
 """
 import boto3
 from pydub import AudioSegment
 import fitz
 
-aws_access_key_id='AKIA6MY2T626YUAAVB4L'
-aws_secret_access_key='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'
+aws_access_key_id='ABCDEGHIJKLMO'
+aws_secret_access_key='ABCDEGHIJKLMO'
 
 # Open the PDF file
 pdf_doc = fitz.open(r"path/to/pdf-book.pdf")
