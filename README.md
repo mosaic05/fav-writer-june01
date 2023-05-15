@@ -8,3 +8,7 @@ This will require following steps:
 3. Create a free account at AWS and get access keys for BOTO3
 4. replace keys in the file create_audiobook_PDF.py ( rest of script is self explanatory )
 5.  ENJOY your audio books
+
+
+NOTE: This script has an interesting feature where you can add a background music to your audio books to make your reading enjoyable! 
+I dedicate this feature to JUNE
